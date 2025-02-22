@@ -4,17 +4,17 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	//if (argc != 3) 
-	//{
-	//	std::cerr << "Usage: " << argv[0] << " <TestData> <model>" << std::endl;
-	//	return 1;
-	//}
+	if (argc != 3) 
+	{
+		std::cerr << "Usage: " << argv[0] << " <TestData> <model>" << std::endl;
+		return 1;
+	}
 
 	cout << "Homework 13: Evaluation the ML model. Used  logistic regression." << endl << endl;
 
 	auto prName = std::string(argv[0]);
-	auto testData_fileName = std::string("test.csv");//std::string(argv[1]);
-	auto model_fileName = std::string("logreg_coef.txt");//std::string(argv[2]);
+	auto testData_fileName = std::string(argv[1]);  // std::string("test.csv");
+	auto model_fileName = std::string(argv[2]);     // std::string("logreg_coef.txt");
 
 	// Read model data: matrix 10 x 785
 	double modelCoefficients[10][785];
