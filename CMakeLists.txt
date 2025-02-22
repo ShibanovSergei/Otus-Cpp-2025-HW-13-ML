@@ -12,7 +12,7 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 project(fashio_mnist VERSION ${PROJECT_VESRION})
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (fashio_mnist  "ML_model_ evaluation.cpp" "ML_model_ evaluation.h")
+add_executable (fashio_mnist "ML_model_ evaluation.cpp" "ML_model_ evaluation.h")
 
 set_target_properties(fashio_mnist PROPERTIES
     CXX_STANDARD 20
